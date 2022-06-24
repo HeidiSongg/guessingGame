@@ -5,7 +5,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 })
 
-const secretNumber = 77;
+const secretNumber = Math.floor(Math.random() * 100)  
 
 const checkGuess = function(arg) {
   if(arg > secretNumber) {
