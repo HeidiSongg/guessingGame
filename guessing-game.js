@@ -16,9 +16,13 @@ const checkGuess = function(arg) {
     console.log("Too low")
     return false
   }
-  else {
+  else if (arg == secretNumber){
     console.log("Correct!")
     return true
+  }
+  else {
+    console.log("Enter valid number")
+    return false
   }
 }
 
